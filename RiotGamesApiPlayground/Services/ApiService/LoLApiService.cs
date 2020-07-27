@@ -16,7 +16,7 @@ namespace RiotGamesApiPlayground.Services.ApiService
 		{
 			_loLStatsHttpService = loLStatsHttpService;
 		}
-		public async Task<LoLPlayerInfo> GetPlayerInfo(string playerName, string region)
+		public async Task<LoLPlayerInfo> GetSummonerInfoByName(string playerName, string region)
 		{
 			var lolUserUri = "https://api.riotgames.com/lol/summoner/v4/summoners/by-name/" + playerName;
 			lolUserUri = lolUserUri.Insert(lolUserUri.IndexOf("api", StringComparison.InvariantCultureIgnoreCase), region + ".");

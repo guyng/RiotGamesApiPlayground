@@ -8,6 +8,6 @@ namespace RiotGamesApiPlayground.Services.ApiService.Interfaces
 {
 	public interface ILoLApiService : IApiService
 	{
-		Task<LoLPlayerInfo> GetPlayerInfo(string playerName, string region);
+		Task<LoLPlayerInfo> GetSummonerInfoByName(string playerName, string region);
 	}
 }
